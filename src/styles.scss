@@ -1,0 +1,70 @@
+@mixin random-bgr(){
+  background: rgb(random(255), random(255), random(255));
+}
+
+*{
+  box-sizing: border-box;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.view{
+
+  // transform: translateX(0%);
+transition:.2s;
+  &.push{
+    transform: translateX(25%)
+  }
+  
+
+}
+body{
+  
+   margin: 0
+}
+.header{
+  color: white;
+  height: 50px;
+  background: darkblue
+}
+footer{
+  height: 50px;
+ background: greenyellow
+}
+.block{
+  height: 100%;
+  background:lightblue;
+  // margin-bottom: 15px
+}
+#switch{
+  position: fixed;
+  right:10%;
+  top:30px;
+  z-index: 5;
+}
+
+.red{
+  background: pink;
+  height:600px; 
+  margin-bottom: 30px
+}
+
+aside{
+    position: fixed;
+    top: 0;
+    left: -25%;
+    z-index: 0;
+    width: 25%;
+    height: 100%;
+    padding: 20px;
+    background-color: cornflowerblue;
+    transition:  .2s;
+    &.open{
+      left:0
+    }
+}
+button{
+  background: white
+}
